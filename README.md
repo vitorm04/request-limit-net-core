@@ -5,12 +5,12 @@ Reports are very common in any system and some of them can be very heavy to proc
 
 ## Solution - AspNetCoreRateLimit
 
-`AspNetCoreRateLimit` is a library that can help us with requisition control. You can define rules to decide how many times a customer can call the resource over a period of time.
+`AspNetCoreRateLimit` is a library that can help us with requisition control. You can define rules to decide how many times a client can call the resource over a period of time.
 
 
 But how does it work?
 
-AspNetCoreRateLimit uses the MemoryCache solution to save information about customer requests. For example, a customer can only make 10 requests in a 5-second interval for a specific endpoint. Thus, each request will be saved in memory cache and if the client exceeds this limit, the application will stop the request and return an http error status.
+AspNetCoreRateLimit uses the MemoryCache solution to save information about client requests. For example, a client can only make 10 requests in a 5-second interval for a specific endpoint. Thus, each request will be saved in memory cache and if the client exceeds this limit, the application will stop the request and return an http error status.
 
 
 ## Implementation
