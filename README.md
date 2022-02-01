@@ -46,7 +46,7 @@ With our rules configurated, we need to add few lines in `Startup.cs`:
  public void ConfigureServices(IServiceCollection services)
  {
       services.AddOptions();
-      //AspNetCoreRateLimit uses MemoryCache to control the numbers of request
+      //AspNetCoreRateLimit uses MemoryCache to control the numbers of requests
       services.AddMemoryCache();
 
        //Adding AspNetCoreRateLimit rules
@@ -93,5 +93,5 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     });
 }
 ```
-And it's done, now our api has a request control. You can customize your configuration to follow specific rules, all options are listed here:
+And it's done, now our api has a request control. You can customize your configuration to follow specifics rules, all the options are listed here:
 https://github.com/stefanprodan/AspNetCoreRateLimit
